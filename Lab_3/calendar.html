@@ -1,0 +1,376 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Karpaty Lviv</title>
+  
+    <style>
+        
+        body {
+            
+            font: 20px 'Verdana';
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+            position: relative;
+            z-index: 99999999;
+            background: url( bigstock-Old-grunge-brick-wall-backgrou-44341411.jpg);
+        }
+           
+          ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            z-index: 100;
+         }
+         ul:after {
+            display: block;
+            content: ' ';
+            clear: both;
+            float: none;
+         }
+         ul.menu>li {
+             float: left;
+             background-color: darkgreen;
+             opacity: 0.75;
+            
+         }
+         ul.menu>li>a {
+            display: block;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 1s linear;
+         }
+         ul.menu>li>a:hover {
+            background-color: grey;
+            width: 130px;
+        }
+         ul.submenu {
+            display: none;
+            position: inherit;
+            
+            width: 228px;
+            top: 37px;
+            left: 0;
+            background-color: white;
+            border: 1px solid green;
+        }
+         ul.submenu>li {
+            display: block;
+        }
+         ul.submenu>li>a {
+            display: block;
+            padding: 10px;
+            color: darkgreen;
+            background-color: darkgrey;
+            text-decoration: none;
+        }
+         ul.submenu>li>a:hover {
+            text-decoration: underline;
+            
+        }
+         ul.menu>li:hover>ul.submenu {
+            display: block;
+        }
+         .active {
+            background-color: darkgreen
+        }
+         .center {
+            text-align: center;
+        }
+         .squareBlack {
+            opacity: 0.65;
+            background: black;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px;
+         }
+         .squareWhite {
+            opacity: 0.75;
+            background: DarkGreen;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px
+        }
+        
+                .boxImg {
+            width: 50px;
+            height: 70px;
+            float: right;
+            margin: 0 10px;
+         }
+         .boxImg img {
+             width: 40px;
+            height: 55px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+        }
+         @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+         @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+        
+        
+        
+        .animate-ul{position: relative;margin-top: 70px;left: 70%;display: flex;transform: translate(-50%,-50%);}
+.animate-ul li{list-style:none;letter-spacing:12px;font-size:4em;font-family:fantasy;color:#484848;animation:ani 1.2s linear infinite }
+.animate-ul li:nth-child(1){animation-delay:.2s}
+.animate-ul li:nth-child(2){animation-delay:.6s}
+.animate-ul li:nth-child(3){animation-delay:.8s}
+.animate-ul li:nth-child(4){animation-delay:1s}
+.animate-ul li:nth-child(5){animation-delay:1.4s}
+.animate-ul li:nth-child(6){animation-delay:1.8s}
+.animate-ul li:nth-child(7){animation-delay:1.12s}
+@keyframes ani {
+0%{color:#006400;text-shadow:none}
+90%{color:#006400;text-shadow:none}
+100%{color:#696969;text-shadow:0 0 7px #696969,0 0 70px #696969}
+}
+        
+        .simple-little-table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#006600;
+	font-size:20px;
+	text-shadow: 1px 1px 0px #006600
+	background:#006600;
+	margin:30px;
+	border:#ccc 2px solid;
+	border-collapse:separate;
+ 
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+ 
+	-moz-box-shadow: 0 1px 2px #006600;
+	-webkit-box-shadow: 0 1px 2px #006600;
+	box-shadow: 0 1px 2px #006600;
+}
+ 
+.simple-little-table th {
+	font-weight:bold;
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #006600;
+	border-bottom:1px solid #006600;
+ 
+	background: #006600;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #006600,  #006600);
+}
+.simple-little-table th:first-child{
+	text-align: center;
+	padding-left:30px;
+}
+.simple-little-table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.simple-little-table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.simple-little-table tr{
+	text-align: center;
+	padding-left:20px;
+}
+.simple-little-table tr td:first-child{
+	text-align: center;
+	padding-left:20px;
+	border-left: 0;
+}
+.simple-little-table tr td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	border-left: 1px solid #e0e0e0;
+ 
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+.simple-little-table tr:nth-child(even) td{
+	background: #006600;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+.simple-little-table tr:last-child td{
+	border-bottom:0;
+}
+.simple-little-table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.simple-little-table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+.simple-little-table tr:hover td{
+	background: #006600;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #006600,  #006600);
+}
+ 
+.simple-little-table a:link {
+	color: #006600;
+	font-weight: bold;
+	text-decoration:none;
+}
+.simple-little-table a:visited {
+	color: #006600;
+	font-weight:bold;
+	text-decoration:none;
+}
+.simple-little-table a:active,
+.simple-little-table a:hover {
+	color: #006600;
+	text-decoration:underline;
+}
+    
+        
+           </style>
+</head>
+ <body>
+    <div>
+        <ul class="menu">
+            <li><a class="" href="http://127.0.0.1:50007/index.html">Main</a>
+            </li>
+            <li><a href=#>Matches</a>
+                <ul class="submenu">
+                    <li><a href="http://127.0.0.1:50007/calendar.html">Calendar of matches</a></li>
+                    <li><a href=#>Next Game</a></li>
+                    <li><a href=#>Rating</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:50007/news.html">News</a>
+            </li>
+            <li><a href="http://127.0.0.1:50007/fans.html">Fans</a>
+            </li>
+            <li><a href=#>Contacts</a>
+            </li>
+            <li><a href=#>Admin</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dws_wrapper">
+
+
+<div class="boxImg"><img src="Емблема_ФК_Карпати_Львів.png">
+         </div>
+         
+         <div style="padding-top: 65px">
+            <div class="squareBlack">
+                <div class="center" style="font-size: 1em; color:white">
+                    <ul class="animate-ul">
+  <li>C</li>
+  <li>a</li>
+  <li>l</li>
+  <li>e</li>
+  <li>n</li>
+  <li>d</li>
+  <li>a</li>
+  <li>r</li>
+  <li>O</li>
+  <li>f</li>
+  <li>M</li>
+  <li>a</li>
+  <li>t</li>
+  <li>c</li>
+  <li>h</li>
+  <li>e</li>
+  <li>s</li>
+
+  
+ 
+</ul>
+        </div>
+        </div>
+        </div>
+        
+    <table class="simple-little-table" cellspacing='0'>
+	<tr>
+		<th style="background-color: #006400;">Дата матчу</th>
+		<th>Місце проведення</th>
+		<th>Суперник/турнір</th>
+	</tr><!-- Table Header -->
+ 
+	<tr>
+		<td>2018-09-28 Прем’єр-ліга 10-й тур</td>
+		<td>Місто Львів</td>
+		<td>«Карпати» (Львів) - «Шахтар» (Донецьк)</td>
+	</tr><!-- Table Row -->
+ 
+	<tr>
+		<td>2018-10-03 Чемпіонат 11-й тур</td>
+		<td>Місто Маріуполь</td>
+		<td>«Маріуполь» (Маріуполь) - «Карпати» (Львів)</td>
+	</tr><!-- Darker Table Row -->
+ 
+	<tr>
+		<td>2018-10-21 Прем’єр-ліга 12-й тур</td>
+		<td>Місто Кіровоград</td>
+		<td>«Олександрія» (Олександрія) - «Карпати» (Львів)</td>
+	</tr>
+ 
+	<tr>
+		<td>2018-10-28 Прем’єр-ліга 13-й тур</td>
+		<td>Місто Одеса</td>
+		<td>«Чорноморець» (Одеса) - «Карпати» (Львів)</td>
+	</tr>
+ 
+    <tr>
+		<td>2018-11-03 Прем’єр-ліга 14-й тур</td>
+		<td>Місто Запоріжжя</td>
+		<td>«Олімпік» (Донецьк) - «Карпати» (Львів)</td>
+	</tr>
+ 
+	<tr>
+		<td>2018-11-04 Прем’єр-ліга 14-й тур</td>
+		<td>Місто Львів</td>
+		<td>«Львів» (Львів) - «Карпати» (Львів)</td>
+	</tr>
+ 
+	
+</table>
+        
+        
+        
+        
+        
+</body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+

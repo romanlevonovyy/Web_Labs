@@ -1,0 +1,283 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Karpaty Lviv</title>
+   
+    <style>
+        body {
+            
+            font: 20px 'Verdana';
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+            position: relative;
+            z-index: 99999999;
+            background: url( bigstock-Old-grunge-brick-wall-backgrou-44341411.jpg);
+        }
+           
+          ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            z-index: 100;
+         }
+         ul:after {
+            display: block;
+            content: ' ';
+            clear: both;
+            float: none;
+         }
+         ul.menu>li {
+             float: left;
+             background-color: darkgreen;
+             opacity: 0.75;
+            
+         }
+         ul.menu>li>a {
+            display: block;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 1s linear;
+         }
+         ul.menu>li>a:hover {
+            background-color: grey;
+            width: 130px;
+        }
+         ul.submenu {
+            display: none;
+            position: inherit;
+            
+            width: 228px;
+            top: 37px;
+            left: 0;
+            background-color: white;
+            border: 1px solid green;
+        }
+         ul.submenu>li {
+            display: block;
+        }
+         ul.submenu>li>a {
+            display: block;
+            padding: 10px;
+            color: darkgreen;
+            background-color: darkgrey;
+            text-decoration: none;
+        }
+         ul.submenu>li>a:hover {
+            text-decoration: underline;
+             
+             }
+         ul.menu>li:hover>ul.submenu {
+            display: block;
+        }
+         .active {
+            background-color: darkgreen
+        }
+         .center {
+            text-align: center;
+        }
+         .squareBlack {
+            opacity: 0.55;
+            background: black;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px;
+         }
+         .squareWhite {
+            opacity: 0.65;
+            background: DarkGreen;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px
+        }
+        
+                .boxImg {
+            width: 40px;
+            height: 55px;
+            float: right;
+            margin: 0 10px;
+         }
+         .boxImg img {
+             width: 50px;
+            height: 70px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+             
+        }
+        
+             td {
+    background: #006400; 
+   
+    padding: 5px; 
+    opacity: 0.85; 
+    
+   }
+        .trans {
+    opacity: 1; 
+    filter: alpha(Opacity=100); 
+   
+    
+         }
+    
+   
+        
+         @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+         @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+        
+         .animate-ul{position: relative;margin-top: 45px;left: 90%;display: flex;transform: translate(-50%,-50%);}
+.animate-ul li{list-style:none;letter-spacing:15px;font-size:4em;font-family:fantasy;color:#484848;animation:ani 1.2s linear infinite }
+.animate-ul li:nth-child(1){animation-delay:.2s}
+.animate-ul li:nth-child(2){animation-delay:.6s}
+.animate-ul li:nth-child(3){animation-delay:.8s}
+.animate-ul li:nth-child(4){animation-delay:1s}
+.animate-ul li:nth-child(5){animation-delay:1.4s}
+.animate-ul li:nth-child(6){animation-delay:1.8s}
+.animate-ul li:nth-child(7){animation-delay:1.12s}
+@keyframes ani {
+0%{color:#006400;text-shadow:none}
+90%{color:#006400;text-shadow:none}
+100%{color:#696969;text-shadow:0 0 7px #696969,0 0 70px #696969}
+}
+        
+        
+         </style>
+</head>
+ <body>
+    <div>
+        <ul class="menu">
+            <li><a class="" href="http://127.0.0.1:50007/index.html">Main</a>
+            </li>
+            <li><a href=#>Matches</a>
+                <ul class="submenu">
+                    <li><a href="http://127.0.0.1:50007/calendar.html">Calendar of matches</a></li>
+                    <li><a href=#>Next Game</a></li>
+                    <li><a href=#>Rating</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:50007/news.html">News</a>
+            </li>
+            <li><a href="http://127.0.0.1:50007/fans.html">Fans</a>
+            </li>
+            <li><a href=#>Contacts</a>
+            </li>
+            <li><a href=#>Admin</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dws_wrapper">
+
+
+<div class="boxImg"><img src="Емблема_ФК_Карпати_Львів.png">
+         </div>
+         
+         <div style="padding-top: 65px">
+            <div class="squareBlack">
+                <div class="center" style="font-size: 1em; color:white">
+                    <ul class="animate-ul">
+  <li>F</li>
+  <li>A</li>
+  <li>N</li>
+  <li>S</li>
+  
+ 
+</ul>
+        </div>
+        </div>
+        </div>
+        
+       
+      
+     <div class="squareWhite">
+            <div class="center">
+                <p style="font-size: 1.7em; color:green">
+                  <p> <h4> У мережі опубліковано лист ГО «Завжди вірні» (фанатський рух львівських «Карпат») до депутата Львівської міської ради та місцевого бізнесмена Григорія Козловського. Зважаючи на те, що сайт організації не працює, першим його опублікувала газета «Спортивка».
+
+У листі від імені фанатів звертаються до Григорія Козловського «врятуйте ФК «Карпати» (Львів)! Допоможіть врятувати гордість міста Львова!». Окрім того, у плачевній ситуації в клубі у всьому звинувачення лунають у сторону теперішнього керівництва: «закордонні «гастролери» та аферисти зруйнували наш улюблений клуб, знищили традиції поколінь, перетворили перемоги на поразки». Мова йде про віце-президента ФК «Карпати» Олега Смалійчука та виконавчого директора Даріо Друді.
+
+У коментарі ZAXID.NET один із співзасновників ГО «Завжди вірні» Тарас Павлів (серед фанатів відомий під прізвиськами «Гладіатор» та «Гладік») підтвердив правдивість такого звернення. Він розповів, що причиною листа стала невдала гра «Карпат», а також те, що саме Григорій Козловський допоміг вирішити справу з колишній гравцем «зелено-білих» Володимиром Гудимою, через що з команди могли зняти 9 очок.</h4></p>
+
+    
+</div>
+<p><h5>02.10.2018</h5></p>
+
+ 
+            
+        </div>
+        
+        
+        
+         <div style="padding-top: 35px">
+         <div class="squareWhite">
+            <div class="center">
+                <p style="font-size: 1.7em; color:green">
+                  <p> <h4> Як повідомляло Depo.Сектор, вчора на Facebook сторінці "Завжди Вірні" з'явився заклик до порятунку "Карпат" до президента "Руху" Григорія Козловського через критичний стан справ в клубі.
+
+Але сьогодні інша частина уболівальників львівської команди заявила, що не має до цієї заяви ніякого відношення, а члени групи "Завжди Вірні" не грають суттєвої ролі в фанатському русі "Карпат" досить давно.
+
+Заява, опублікована на сайті вболівальників Карпат Fckarpaty.com.ua публікуємо мовою оригіналу і без правок.</h4></p>
+
+    
+</div>
+<p><h5>02.10.2018</h5></p>
+
+ 
+            
+        </div>
+        </div>
+        
+        
+        <div style="padding-top: 35px">
+         <div class="squareWhite">
+            <div class="center">
+                <p style="font-size: 1.7em; color:green">
+                  <p> <h4> Звернення українських фанатських рухів до Президента України Петра Порошенка. 
+
+Звертаємо Вашу увагу, як гаранта додержання Конституції України, прав і свобод людини і громадянина, що всупереч чинному законодавству України національна Федерація футболу запровадила продаж квитків на матчі збірної України за паспортами. 
+
+Примушуючи купувати квитки за паспортами, чиновники цієї громадської організації проявляють зневагу до конституційних прав та свобод громадян. Адже згідно з Конституцією України ніхто не може змусити громадян робити те, що не передбачено законом. Вимагаємо забезпечити дотримання законодавства України.
+
+Варто зазначити, що подібні ініціативи, щодо входу на стадіон за паспортами, не нові. Вперше їх намагався запровадити режим Януковича, проголосувавши 16 січня 2014 року за "диктаторські закони". Один з цих законів саме і стосувався іменних квитків на футбол.
+
+Найближчий матч збірної відбудеться 9 жовтня у Києві між збірними України та Хорватії. Вашу позицію ми зрозуміємо з того, чи буде призупинено продаж квитків за паспортами на цей матч.</h4></p>
+
+    
+</div>
+<p><h5>02.10.2018</h5></p>
+
+ 
+            
+        </div>
+        </div>
+
+
+
+
+
+          
+    
+   
+  

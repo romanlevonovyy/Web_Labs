@@ -1,0 +1,239 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Karpaty Lviv</title>
+   
+    <style>
+        body {
+            
+            font: 20px 'Verdana';
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+            position: relative;
+            z-index: 99999999;
+            background: url( bigstock-Old-grunge-brick-wall-backgrou-44341411.jpg);
+        }
+           
+          ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            z-index: 100;
+         }
+         ul:after {
+            display: block;
+            content: ' ';
+            clear: both;
+            float: none;
+         }
+         ul.menu>li {
+             float: left;
+             background-color: darkgreen;
+             opacity: 0.75;
+            
+         }
+         ul.menu>li>a {
+            display: block;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 1s linear;
+         }
+         ul.menu>li>a:hover {
+            background-color: grey;
+            width: 130px;
+        }
+         ul.submenu {
+            display: none;
+            position: inherit;
+            
+            width: 228px;
+            top: 37px;
+            left: 0;
+            background-color: white;
+            border: 1px solid green;
+        }
+         ul.submenu>li {
+            display: block;
+        }
+         ul.submenu>li>a {
+            display: block;
+            padding: 10px;
+            color: darkgreen;
+            background-color: darkgrey;
+            text-decoration: none;
+        }
+         ul.submenu>li>a:hover {
+            text-decoration: underline;
+             
+             }
+         ul.menu>li:hover>ul.submenu {
+            display: block;
+        }
+         .active {
+            background-color: darkgreen
+        }
+         .center {
+            text-align: center;
+        }
+         .squareBlack {
+            opacity: 0.55;
+            background: black;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px;
+         }
+         .squareWhite {
+            opacity: 0.55;
+            background: White;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px
+        }
+        
+                .boxImg {
+            width: 40px;
+            height: 55px;
+            float: right;
+            margin: 0 10px;
+         }
+         .boxImg img {
+             width: 50px;
+            height: 70px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+             
+        }
+        
+             td {
+    background: #006400; 
+   
+    padding: 5px; 
+    opacity: 0.85; 
+    
+   }
+        .trans {
+    opacity: 1; 
+    filter: alpha(Opacity=100); 
+   
+    
+         }
+    
+   
+        
+         @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+         @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+             100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+         }
+        
+         .animate-ul{position: relative;margin-top: 45px;left: 94%;display: flex;transform: translate(-50%,-50%);}
+.animate-ul li{list-style:none;letter-spacing:15px;font-size:4em;font-family:fantasy;color:#484848;animation:ani 1.2s linear infinite }
+.animate-ul li:nth-child(1){animation-delay:.2s}
+.animate-ul li:nth-child(2){animation-delay:.6s}
+.animate-ul li:nth-child(3){animation-delay:.8s}
+.animate-ul li:nth-child(4){animation-delay:1s}
+.animate-ul li:nth-child(5){animation-delay:1.4s}
+.animate-ul li:nth-child(6){animation-delay:1.8s}
+.animate-ul li:nth-child(7){animation-delay:1.12s}
+@keyframes ani {
+0%{color:#006400;text-shadow:none}
+90%{color:#006400;text-shadow:none}
+100%{color:#696969;text-shadow:0 0 7px #696969,0 0 70px #696969}
+}
+        
+        
+         </style>
+</head>
+ <body>
+    <div>
+        <ul class="menu">
+            <li><a class="" href="http://127.0.0.1:50007/index.html">Main</a>
+            </li>
+            <li><a href=#>Matches</a>
+                <ul class="submenu">
+                    <li><a href="http://127.0.0.1:50007/calendar.html">Calendar of matches</a></li>
+                    <li><a href=#>Next Game</a></li>
+                    <li><a href=#>Rating</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:50007/news.html">News</a>
+            </li>
+            <li><a href="http://127.0.0.1:50007/fans.html">Fans</a>
+            </li>
+            <li><a href=#>Contacts</a>
+            </li>
+            <li><a href=#>Admin</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dws_wrapper">
+
+
+<div class="boxImg"><img src="Емблема_ФК_Карпати_Львів.png">
+         </div>
+         
+         <div style="padding-top: 65px">
+            <div class="squareBlack">
+                <div class="center" style="font-size: 1em; color:white">
+                    <ul class="animate-ul">
+  <li>N</li>
+  <li>E</li>
+  <li>W</li>
+  
+ 
+</ul>
+        </div>
+        </div>
+        </div>
+        
+    
+      <table border="0" cellspacing="14" cellpadding="10">
+                 
+<tr>
+<td class="trans" style="background-color: #006400;"><img src="p1ck5tpbadffk1g599uq1ci512028.JPG" width="445" height="300"></td>
+<td class="trans" style="background-color: #006400;"> <img src="p1co2k6nom1n691kok1tkrqi31e7ic.JPG"  width="445" height="300"></td>
+<td class="trans" style="background-color: #006400;"> <img src="p1cmf77jivakgmecl8edcs111u5.JPG"  width="445" height="300"></td>
+
+</tr>
+<tr>
+<td style="background-color: #006400;"> <h4>Прем’єр-ліга. «Карпати» – «Арсенал-Київ» – 1:2</h4></td>
+<td style="background-color: #006400;"> <h4>Прем’єр-ліга. «Львів» – «Карпати» – 1:1</h4></td>
+<td style="background-color: #006400;"> <h4>Прем’єр-ліга. «Динамо» – «Карпати» – 0:2</h4></td>
+
+</tr>
+<tr>
+    <td style="background-color: #006400;"> <p>Перший виїзний поєдинок для «зелено-білих» у новому сезоні неабияк запам’ятався як для команди, так і для вболівальників. Поступаючись по ходу зустрічі 0:2, карпатівці зуміли відігратись та здобути на виїзді важливе очко. Схожий сценарій за тиждень розгортався вже у Львові, у грі «Карпат» з київським «Арсеналом». Однак, цього разу «зелено-білим» не вистачило одного м’яча...</p> </td>
+<td style="background-color: #006400;"> Напружене львівське дербі завершилося внічию 1:1. Забиті голи команди відклали на другий тайм. Сергій Мякушко у своєму стилі чудово виконав штрафний, а нічию номінальним господарям приніс дует Западня-Бруно. </td>
+<td style="background-color: #006400;"> «Карпати» приїхали до Києва після прикрої поразки від «Арсенала». Зрештою, динамівці також мали клопоти в останніх поєдинках – «Аякс» вибив їх із Ліги чемпіонів, а «Чорноморець» здобув очко наприкінці гри. Жозе Мораіш вніс певні корективи у стартовий склад – Олексій Гуцуляк вийшов на позиції чистого форварда, Карраскаль змістився глибше, а Швед з Мякушком опинилися на фланзі атаки. </td>
+
+</tr>
+         
+</table>
+     
+   
+      
+      
+ </body>
+</html>
